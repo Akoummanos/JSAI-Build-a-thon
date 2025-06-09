@@ -40,6 +40,7 @@ export async function main() {
               type: "text",
               text: "Write a web page for a hackathon project that uses the following image as a layout sketch. Provide the HTML and CSS code with every image/icon included from cloud.",
             },
+
             {
               type: "image_url",
               image_url: {
@@ -63,5 +64,5 @@ export async function main() {
 }
 
 main().catch((err) => {
-  console.error("The sample encountered an error:", err);
+  console.error("The sample encountered an error:!", err);
 });

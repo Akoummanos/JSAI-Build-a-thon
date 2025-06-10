@@ -29,6 +29,7 @@ export async function main() {
   const imagePath = path.join(__dirname, "contoso_layout_sketch.jpg");
   const imageData = getImageData(imagePath);
 
+
   const response = await client.path("/chat/completions").post({
     body: {
       messages: [
@@ -64,5 +65,6 @@ export async function main() {
 }
 
 main().catch((err) => {
-  console.error("The sample encountered an error:!", err);
+
+  console.error("The sample encountered an error:", err);
 });
